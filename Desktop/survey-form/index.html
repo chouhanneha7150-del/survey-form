@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h2>Survey Form</h2>
+
+  <form>
+
+    <label>Name *</label>
+    <div class="row">
+      <input type="text" placeholder="First">
+      <input type="text" placeholder="Last">
+    </div>
+
+    <label>Email *</label>
+    <input type="email">
+
+    <label>Your Experience *</label>
+
+    <!-- ⭐ Star Rating -->
+    <div class="rating">
+      <input type="radio" name="star" id="star5"><label for="star5">★</label>
+      <input type="radio" name="star" id="star4"><label for="star4">★</label>
+      <input type="radio" name="star" id="star3"><label for="star3">★</label>
+      <input type="radio" name="star" id="star2"><label for="star2">★</label>
+      <input type="radio" name="star" id="star1"><label for="star1">★</label>
+    </div>
+
+    <p>How satisfied are you with:</p>
+
+    <table>
+      <tr>
+        <th></th>
+        <th>Very Unsatisfied</th>
+        <th>Unsatisfied</th>
+        <th>Neutral</th>
+        <th>Satisfied</th>
+        <th>Very Satisfied</th>
+      </tr>
+
+      <tr>
+        <td>Purchase</td>
+        <td><input type="radio" name="purchase"></td>
+        <td><input type="radio" name="purchase"></td>
+        <td><input type="radio" name="purchase"></td>
+        <td><input type="radio" name="purchase"></td>
+        <td><input type="radio" name="purchase"></td>
+      </tr>
+
+      <tr>
+        <td>Service</td>
+        <td><input type="radio" name="service"></td>
+        <td><input type="radio" name="service"></td>
+        <td><input type="radio" name="service"></td>
+        <td><input type="radio" name="service"></td>
+        <td><input type="radio" name="service"></td>
+      </tr>
+    </table>
+
+    <label>Additional Comments</label>
+    <textarea></textarea>
+
+    <button type="submit">Submit</button>
+
+  </form>
+</div>
+
+</body>
+</html>
